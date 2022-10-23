@@ -2,11 +2,7 @@
 // in Ex7 to Ex13, change the name of the following function properly
 
 function triangle(){
-     /* this statement add some message to our output Object used for Ex8
-      you would need to change the message to be appropriate in Ex9 to E13 */
- 
    
- 
    // // translate the rest of your flowcharts to js here:
    
    // pre-con: num is a positive integer
@@ -17,7 +13,8 @@ function triangle(){
    //    html element having an ID "output".
    //    Every time you want to output something, use outputObj */
    var outputObj = document.getElementById("output");
-   
+
+   // this statement receives some data and parses it to integer
    num = parseInt(prompt("Please enter a number: "));  
    
    outputObj.innerHTML = "number: " + num + "<br>";

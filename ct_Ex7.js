@@ -11,7 +11,6 @@
   
       /* this statement add some message to our output Object used for Ex8
          you would need to change the message to be appropriate in Ex9 to E13 */
-    
       //  outputObj.innerHTML = "number: " + a + "<br><br>its digits: "; // uncomment this line for Ex8
     
       // translate the rest of your flowcharts to js here:
@@ -19,18 +18,18 @@
       // pre con: num is an integer
       // post con: output if num is even or odd, until 0 is inputted, then output program ended
 
-      while (1==1) {
+      while (true) {
          num = parseInt(prompt("Please enter a number: "));
-         if (num == 0){
+         if (num == 0) {
             outputObj.innerHTML += "<br><br>" + "program ended";
             document.getElementsByTagName("button")[0].setAttribute("disabled","true");
             return;
          }
-         else if (num % 2 == 0){
+         else if (num % 2 == 0) {
             number = "even";
             outputObj.innerHTML += "<br>" + num + ": " + number;
          }
-         else{
+         else {
             number = "odd";
             outputObj.innerHTML += "<br>" + num + ": " + number;
          }

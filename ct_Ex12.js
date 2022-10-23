@@ -15,6 +15,7 @@ function fibonacci(){
    //    Every time you want to output something, use outputObj */
    var outputObj = document.getElementById("output");
       
+   // this statement receives some data and parses it to integer
    num = parseInt(prompt("Please enter a number: "));
 
    secondLast = 0;

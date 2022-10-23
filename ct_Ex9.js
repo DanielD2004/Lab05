@@ -2,10 +2,6 @@
 // in Ex7 to Ex13, change the name of the following function properly
 
 function digits37(){
-     /* this statement add some message to our output Object used for Ex8
-      you would need to change the message to be appropriate in Ex9 to E13 */
- 
-   
  
    // // translate the rest of your flowcharts to js here:
    
@@ -17,6 +13,7 @@ function digits37(){
    //    Every time you want to output something, use outputObj */
    var outputObj = document.getElementById("output");
 
+   // this statement receives some data and parses it to integer
    num = parseInt(prompt("Please enter a number: "));   
  
    let digits = [];
@@ -26,7 +23,7 @@ function digits37(){
       let digit = num % 10;
       num = Math.floor(num/10);
       if (digit == 3 || digit == 7) {
-         count += 1;
+         ++count;
       }     
       digits.unshift(digit); 
    }

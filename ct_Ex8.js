@@ -2,11 +2,8 @@
 // in Ex7 to Ex13, change the name of the following function properly
 
 function seperateDigits(){
-     /* this statement add some message to our output Object used for Ex8
-      you would need to change the message to be appropriate in Ex9 to E13 */
 
    // // translate the rest of your flowcharts to js here:
-   
 
    // pre con: num is a positive integer
    // post con: Output all digits of num seperately
@@ -16,12 +13,12 @@ function seperateDigits(){
    //    Every time you want to output something, use outputObj */
    var outputObj = document.getElementById("output");
 
-   // // this statement receives some data and parses it to integer
+   // this statement receives some data and parses it to integer
    num = parseInt(prompt("Please enter a positive number: "));
 
    digits = [];
    outputObj.innerHTML = "number: " + num + "<br><br>its digits: "; // uncomment this line for Ex8 
-   while (num > 0){
+   while (num > 0) {
       digit = num % 10;
       num = Math.floor(num / 10);
       digits.unshift(digit);  
